@@ -1,0 +1,18 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="updatebar_height">62.0dip</dimen>
+    <dimen name="updatebar_content_height">60.0dip</dimen>
+    <dimen name="updatebar_padding">10.0dip</dimen>
+    <dimen name="info_row_height">30.0dip</dimen>
+    <dimen name="info_text_left">10.0dip</dimen>
+    <dimen name="info_text_right">10.0dip</dimen>
+    <dimen name="info_text_top">5.0dip</dimen>
+    <dimen name="info_text_bottom">5.0dip</dimen>
+    <dimen name="big_text_size">16.0sp</dimen>
+    <dimen name="normal_text_size">14.0sp</dimen>
+    <dimen name="small_text_size">12.0sp</dimen>
+
+</resources>

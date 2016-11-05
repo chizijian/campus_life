@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/javaapk.com-campus_life.iml" filepath="$PROJECT_DIR$/javaapk.com-campus_life.iml" />
+      <module fileurl="file://$PROJECT_DIR$/javaapkcomcampus_life/javaapkcomcampus_life.iml" filepath="$PROJECT_DIR$/javaapkcomcampus_life/javaapkcomcampus_life.iml" />
+      <module fileurl="file://$PROJECT_DIR$/library/library.iml" filepath="$PROJECT_DIR$/library/library.iml" />
+    </modules>
+  </component>
+</project>

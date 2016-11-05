@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/activity_title" />
+
+    <HorizontalScrollView
+        android:id="@+id/picScrollView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" >
+
+        <LinearLayout
+            android:id="@+id/picLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@+id/addPicLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingLeft="5.0dip" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingRight="5.0dip" >
+
+                <ImageView
+                    android:id="@+id/addImageView"
+                    android:layout_width="100.0dip"
+                    android:layout_height="100.0dip"
+                    android:adjustViewBounds="true"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:maxHeight="100.0dip"
+                    android:maxWidth="100.0dip"
+                    android:paddingBottom="10.0dip"
+                    android:paddingTop="10.0dip"
+                    android:src="@drawable/addpic" />
+            </LinearLayout>
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <TextView style="@style/SeparatorLine" />
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="10.0dip"
+            android:paddingRight="10.0dip"
+            android:paddingTop="10.0dip" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/login_bg"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tx_releaseTitle"
+                        style="@style/ReleaseText"
+                        android:text="@string/tx_releaseTitle" />
+
+                    <EditText
+                        android:id="@+id/releaseTitle"
+                        style="@style/ReleaseEdit"
+                        android:hint="@string/tx_releaseTitle_hint"
+                        android:maxLength="25"
+                        android:textColorHint="#ffbbbbbb" />
+                </LinearLayout>
+
+                <TextView style="@style/SeparatorLine" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tx_type"
+                        style="@style/ReleaseText"
+                        android:text="@string/tx_type" />
+
+                    <Spinner
+                        android:id="@+id/spinner_type"
+                        style="@style/Spinner"
+                        android:prompt="@string/tx_type" />
+                </LinearLayout>
+
+                <TextView style="@style/SeparatorLine" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tx_releasePrice"
+                        style="@style/ReleaseText"
+                        android:text="@string/tx_releasePrice" />
+
+                    <EditText
+                        android:id="@+id/releasePrice"
+                        style="@style/ReleaseEdit"
+                        android:hint="@string/tx_releasePrice_hint"
+                        android:inputType="number"
+                        android:maxLength="25"
+                        android:textColorHint="#ffbbbbbb" />
+                </LinearLayout>
+
+                <TextView style="@style/SeparatorLine" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tx_link"
+                        style="@style/ReleaseText"
+                        android:text="@string/tx_link" />
+
+                    <EditText
+                        android:id="@+id/link"
+                        style="@style/ReleaseEdit"
+                        android:hint="@string/tx_link_hint"
+                        android:maxLength="25"
+                        android:inputType="number"
+                        android:textColorHint="#ffbbbbbb" />
+                </LinearLayout>
+
+                <TextView style="@style/SeparatorLine" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tx_describe"
+                        style="@style/ReleaseText"
+                        android:text="@string/tx_describe" />
+
+                    <EditText
+                        android:id="@+id/describe"
+                        style="@style/ReleaseEdit"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20.0dip"
+                        android:background="@null"
+                        android:gravity="top"
+                        android:hint="@string/tx_describe_hint"
+                        android:inputType="textMultiLine"
+                        android:maxLength="100"
+                        android:minHeight="100.0dip"
+                        android:textColorHint="#ffbbbbbb" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/release"
+                style="@style/BigButton"
+                android:text="@string/release" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="gv_item_select_color">#00008B</color>
+    <color name="black">#ff000000</color>
+    <color name="white">#ffffffff</color>
+	<color name="selected_fg">#33FFFF</color>
+    <color name="selected_bg">#FFFF99</color>
+    <color name="black_text">#ff18191a</color>
+    <color name="green">#ff226300</color>
+</resources>

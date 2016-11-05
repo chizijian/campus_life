@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/activity_title" />
+
+    <EditText
+        android:id="@+id/et_message"
+        style="@style/ReleaseEdit"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="20.0dip"
+        android:background="@drawable/login_bg"
+        android:gravity="top"
+        android:hint="@string/tx_describe_hint"
+        android:inputType="textMultiLine"
+        android:maxLength="100"
+        android:minHeight="150.0dip"
+        android:padding="5dp"
+        android:textColorHint="#ffbbbbbb" />
+
+    <Button
+        android:id="@+id/leave"
+        style="@style/BigButton"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:text="留言" />
+
+</LinearLayout>

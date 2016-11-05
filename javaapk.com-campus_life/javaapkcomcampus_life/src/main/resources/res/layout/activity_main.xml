@@ -1,0 +1,33 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/activity_title" />
+
+    <fragment
+        android:id="@+id/my_fragment"
+        android:layout_height="180.0dip"
+        android:layout_width="match_parent" 
+        android:name="com.dcc.app.campus_life.GuideFragment"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/layout_back"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <GridView
+            android:id="@+id/sub_gv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:gravity="center"
+            android:listSelector="@drawable/gv_back"
+            android:numColumns="3"
+            android:verticalSpacing="20.0dip" />
+    </LinearLayout>
+
+</LinearLayout>
